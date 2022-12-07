@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 70px 20px;
+
+}
+.todo{
+    width: 100%;
+   
+    min-width: 300px;
+    max-width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    
+    border-radius: 10px;
+    border: 1px solid #575757;
+     margin: auto; 
+    
+}
+
+.title{
+ font-weight: 700;
+  margin-top: .3em;
+
+}
+
+.head{
+    display: flex;
+    margin: 15px 20px;
+}
+.parrafo{
+    color: #575757;
+    font-size: 1rem;
+    margin: 20px 30px;
+}
+.btn{
+    margin: 70px 200px;
+     
+}
