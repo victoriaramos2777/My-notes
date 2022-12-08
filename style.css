@@ -6,7 +6,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 70px 20px;
-
+    
 }
 .todo{
     width: 100%;
@@ -16,12 +16,12 @@ body{
     height: 400px;
     display: flex;
     flex-direction: column;
-    
     border-radius: 10px;
-    border: 1px solid #575757;
      margin: auto; 
-    
+    box-shadow: inset 0 -1em 2em rgb(68, 66, 66), 0 0 0 1px rgb(98, 96, 96), 0.3em 0.3em 1em  rgb(67, 66, 66);
 }
+
+
 
 .title{
  font-weight: 700;
@@ -39,6 +39,16 @@ body{
     margin: 20px 30px;
 }
 .btn{
-    margin: 70px 200px;
-     
+    margin: 70px 160px;
+     padding: .3em;
+     width: 30%;
+     font-size: 1rem;
+     border: none;
+     border-radius: 10px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 300;
+}
+
+.image{
+    width: 20%;
 }
