@@ -72,7 +72,7 @@ main.addEventListener('click', (e) => {
 
 const agregarNota =document.createElement('div');
 agregarNota.innerHTML = `
-<form id="main-form">
+<form id="main-form" class="form-m">
 <input type="text" name="titulo" id="titulo" placeholder="Agregar titulo">
 <input type="text" name="fecha" id="nota" placeholder="Agregar tu nota">
 <input type="text" name="fecha" id="fecha" placeholder="Agregar fecha">

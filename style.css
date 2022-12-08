@@ -47,6 +47,10 @@ body{
      border-radius: 10px;
      font-family: 'Montserrat', sans-serif;
      font-weight: 300;
+    
+      background: linear-gradient(to right, rgb(9, 208, 235),#0b58cc);
+      color:transparent;
+     -webkit-background-clip:text;
 }
 
 .image{
