@@ -1,4 +1,4 @@
-//constantes 
+//constantes iniciales
 const main = document.getElementById ('main');
 const contenidoInicial = document.getElementById('contenido-1');
 const mainBtn = document.getElementById ('main-btn');
@@ -17,7 +17,6 @@ let fecha;
 
 main.addEventListener('click', (e) => {
   //para confirmar el btn principal  
-    
     if(e.target === mainBtn){
         contenidoInicial.remove();
 
@@ -30,15 +29,21 @@ main.addEventListener('click', (e) => {
    if(e.target.id === 'borrar-nota'){
     let checkClick = confirm("Seguro que quieres borrar?");
     if(checkClick == true){
-        contenido2.remove();
+        contenidoNotas.remove();
+
+         contenidoInicial.append(contenido-1); 
     }
   
    } 
+
+   
    //para encontrar el elemento submit de la forma
    if(e.target.id ==='agregar-nota'){
       
-      //evento para escuchar evento para  boton 
+      //evento para escuchar evento para  boton agregar 
       mainForm.addEventListener('submit', (event) =>{
+
+        
         //evitar que la accion por defecto pase
         event.preventDefault();
         
@@ -51,6 +56,8 @@ main.addEventListener('click', (e) => {
             titulo1: titulo.value,
             notaText: nota.value,
             fecha1: Fecha.value,
+
+            
         }
         //descontruir el objeto
         const {titulo1, notaText,fecha1}= formulario;
@@ -73,12 +80,13 @@ main.addEventListener('click', (e) => {
 const agregarNota =document.createElement('div');
 agregarNota.innerHTML = `
 <form id="main-form" class="form-m">
-<input type="text" name="titulo" id="titulo" placeholder="Agregar titulo">
-<input type="text" name="fecha" id="nota" placeholder="Agregar tu nota">
-<input type="text" name="fecha" id="fecha" placeholder="Agregar fecha">
-<button type=" button" id="borrar-nota"> Borrar Nota</button>
-
-<button type=" submit" id="agregar-nota">Agregar nota</button>
+    <input type="text" name="titulo" id="titulo" placeholder="Ingresa un titulo" class="titulo">
+    <input type="text" name="nota" id="nota" placeholder="Escribe aqui" class="nota">
+    <input type="text" name="fecha" id="fecha" placeholder="Ingresar fecha" class="fecha">
+    <div class="btn-2">
+    <button type="button" id="borrar-nota" class="btn-borrar"><img src="./assets/img/icons8-basura-llena-100.png" class="icon-borrar"></> Borrar Nota</button>
+    <button type="submit" id="agregar-nota" class="btn-agregar">Agregar Nota</button>
+    </div>
 </form>
  `;
 
@@ -86,13 +94,17 @@ agregarNota.innerHTML = `
  //crear una constatante para el boton de borrar
  
  const btnDeBorrar = document.getElementById('borrar-nota');
+
+
 //funcion para agregar htmnl dinamico en base a los resultados de la forma
 function agregarNotaDinamico(titulo,nota,fecha){
     const notaHtml = document.createElement('div')
     notaHtml.innerHTML =`
+    <div class="conten3">
     <h2>${titulo}</h2>
     <p>${nota}</p>
-    <p>${fecha}</p> `  
+    <p>${fecha}</p>
+    </div> `;  
 
     return notaHtml;
 }

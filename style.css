@@ -13,7 +13,7 @@ body{
    
     min-width: 300px;
     max-width: 500px;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -37,22 +37,128 @@ body{
     color: #575757;
     font-size: 1rem;
     margin: 20px 30px;
+    line-height: 2em;
 }
 .btn{
     margin: 70px 160px;
-     padding: .3em;
-     width: 30%;
-     font-size: 1rem;
-     border: none;
-     border-radius: 10px;
-     font-family: 'Montserrat', sans-serif;
-     font-weight: 300;
-    
-      background: linear-gradient(to right, rgb(9, 208, 235),#0b58cc);
-      color:transparent;
-     -webkit-background-clip:text;
+    padding: .3em;
+    width: 30%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    background: linear-gradient(to left, rgb(10, 227, 247) rgb(10, 68, 244));
+    color:transparent;
+    -webkit-background-clip:text;
+    background-clip: text;
+    cursor: pointer;
 }
 
 .image{
     width: 20%;
+}
+
+
+.form-m{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin: 20px 40px ;
+    width: 70%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 180px;
+    padding: 3%;
+    background-color: #cac8c8;
+    border-radius: 10px;
+}
+
+
+.titulo{
+    height: 30px;
+    width: 90%;
+    text-align: center;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(12, 12, 12);
+    cursor: pointer;
+}
+
+.nota{
+    height: 60px;
+    width: 90%;
+    margin-top: 2%;
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(12, 12, 12);
+    text-align: center;  
+    cursor: pointer;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     white-space: wrap;
+     
+}
+
+.btn-borrar{
+    border-color: red;
+    color: red;
+
+    background: none;
+    width: 40%;
+    cursor: pointer;
+    
+}
+
+.icon-borrar{
+    width: 15px;
+    cursor: pointer;
+    
+}
+.btn-agregar{
+    width: 40%;
+    padding: 1%;
+}
+
+.fecha{
+    margin-top: 23%;
+    width: 40%;
+    align-self: flex-end;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.btn-2{
+    width: 100%;
+  display: flex;
+  justify-content:center;
+  margin-top: 6%;
+  
+}
+
+.conten3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5em;
+    margin-left: 10%;
+    width: 70%;
+    min-width: 300px;
+    max-width: 500px;
+    height: 100px;
+    background-color: #cac8c8;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.conten3 p{
+    text-align: justify;
+     font-size: .9em;
+     
 }
